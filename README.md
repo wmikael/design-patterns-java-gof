@@ -10,5 +10,5 @@ Este projeto Java demonstra a implementação dos design patterns Singleton, Fac
 
 ## Pré-requisitos
 
-- Java 11+
+- Java 17+
 - Maven
