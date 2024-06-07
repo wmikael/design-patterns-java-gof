@@ -1,4 +1,4 @@
-package Singleton;
+package gof.Singleton;
 
 public class SingletonLazyHolder {
     public static final class InstanceHolder {

@@ -1,4 +1,4 @@
-package Singleton;
+package gof.Singleton;
 
 public class SingletonLazy {
     private static SingletonLazy instance;

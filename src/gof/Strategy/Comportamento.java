@@ -1,4 +1,4 @@
-package Strategy;
+package gof.Strategy;
 
 public interface Comportamento {
     void mover();

@@ -1,11 +1,14 @@
-import Singleton.SingletonEager;
-import Singleton.SingletonLazy;
-import Singleton.SingletonLazyHolder;
-import Strategy.*;
+package gof;
+
+import gof.Singleton.SingletonEager;
+import gof.Singleton.SingletonLazy;
+import gof.Singleton.SingletonLazyHolder;
+import gof.Strategy.*;
+import gof.Facade.Facade;
 
 public class Main {
     public static void main(String[] args) {
-        // Singleton
+        // gof.Singleton
         SingletonLazy lazy = SingletonLazy.getInstance();
         System.out.println(lazy);
         lazy = SingletonLazy.getInstance();
@@ -21,7 +24,7 @@ public class Main {
         lazyHolder = SingletonLazyHolder.getInstance();
         System.out.println(lazyHolder);
 
-        // Strategy
+        // gof.Strategy
         Comportamento defensivo = new ComportamentoDefensivo();
         Comportamento normal = new ComportamentoNormal();
         Comportamento agressivo = new ComportamentoAgressivo();
@@ -35,5 +38,10 @@ public class Main {
 
         robo.setStrategy(agressivo);
         robo.mover();
+
+        // gof.Facade
+
+        Facade facade = new Facade();
+        facade.migrarCliente("João", "12345678");
     }
 }
